@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[YOUR NAME] | Portfolio</title>
+<meta name="description" content="Portfolio of [YOUR NAME]: projects, skills and contact details.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #eef2f1;
+    --ink: #14262b;
+    --muted: #4d6168;
+    --teal: #0f6b6b;
+    --pin: #e0a100;
+    --line: #c5d1d1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #0f1c20; --ink: #e6eeee; --muted: #9fb3b8; --teal: #5cc2c2; --line: #28393e; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 400 1.0625rem/1.65 "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  a { color: var(--teal); text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--pin); outline-offset: 3px; border-radius: 2px; }
+  .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.25rem; }
+  header { padding: 4rem 0 2.5rem; border-bottom: 1px solid var(--line); display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; }
+  .intro { flex: 1 1 18rem; }
+  .photo { width: min(100%, 24rem); aspect-ratio: 4 / 5; height: auto; object-fit: cover; border-radius: 8px; border-bottom: 6px solid var(--pin); background: var(--line); flex: none; }
+  h1, h2, h3 { font-family: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif; line-height: 1.15; margin: 0; }
+  h1 { font-size: clamp(2.4rem, 7vw, 3.8rem); font-weight: 700; letter-spacing: -0.02em; }
+  .role { margin: 0.75rem 0 0; color: var(--muted); font-size: 1.15rem; }
+  nav { margin-top: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap; font-weight: 600; }
+  section { padding: 2.5rem 0; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 1.6rem; margin-bottom: 1rem; }
+  p { margin: 0 0 1rem; max-width: 60ch; }
+  .project { display: block; padding: 1.25rem 0 1.25rem 1.1rem; border-left: 4px solid var(--pin); }
+  .project h3 { font-size: 1.3rem; margin-bottom: 0.35rem; }
+  .project p { margin: 0 0 0.6rem; color: var(--muted); }
+  .tags { font-size: 0.9rem; color: var(--muted); }
+  .project + .project { margin-top: 1rem; border-left-color: var(--line); }
+  .job { margin-bottom: 1.75rem; }
+  .job h3 { font-size: 1.2rem; }
+  .job .when { margin: 0.2rem 0 0.6rem; color: var(--muted); font-size: 0.95rem; }
+  .job ul { margin: 0; padding-left: 1.2rem; max-width: 60ch; }
+  ul.contact { list-style: none; padding: 0; margin: 0; }
+  ul.contact li { margin-bottom: 0.4rem; }
+  footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="photo" src="photo.png" alt="Photo of [YOUR NAME]" width="480" height="600">
+    <div class="intro">
+      <h1>[YOUR NAME]</h1>
+      <p class="role">[Your programme and university]. [One line on what you do or want to do.]</p>
+      <nav aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>[Two or three sentences: who you are, what you study, and what you enjoy mapping. Replace this text with your own.]</p>
+    <p>[Optional: your main skills, interests or goals. Delete this line if you do not need it.]</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <h3><a href="waste-bin-map.html">Waste-bin observations: interactive web map</a></h3>
+      <p>Waste bins recorded in the field with QField, each with a photo, a field note and the name of the student who collected it. Includes a layer control to toggle collectors and basemaps.</p>
+      <p class="tags">QField, GeoPackage, Python, Folium, Leaflet</p>
+      <p><a href="waste-bin-map.html">Open the interactive map</a></p>
+    </article>
+
+    <article class="project">
+      <h3>[Project title]</h3>
+      <p>[One or two sentences on what you did and what you found.]</p>
+      <p class="tags">[Skills or tools used]</p>
+    </article>
+
+    <article class="project">
+      <h3>[Project title]</h3>
+      <p>[One or two sentences on what you did and what you found. Delete any project block you do not need.]</p>
+      <p class="tags">[Skills or tools used]</p>
+    </article>
+  </section>
+
+  <section id="experience">
+    <h2>Internships and experience</h2>
+
+    <article class="job">
+      <h3>[Role title], [Organisation name]</h3>
+      <p class="when">[Month Year] to [Month Year], [City or Remote]</p>
+      <ul>
+        <li>[What you did, starting with a verb. Example: Cleaned and analysed survey data for 200 households.]</li>
+        <li>[A result or something you learned. Add a number only if you are sure it is accurate.]</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <h3>[Role title], [Organisation name]</h3>
+      <p class="when">[Month Year] to [Month Year], [City or Remote]</p>
+      <ul>
+        <li>[What you did.]</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul class="contact">
+      <li>Email: <a href="mailto:[your-email]">[your-email]</a></li>
+      <li>GitHub: <a href="https://github.com/[your-username]">github.com/[your-username]</a></li>
+      <li>LinkedIn: <a href="[your-linkedin-url]">[your-linkedin-url]</a></li>
+    </ul>
+  </section>
+
+  <footer>&copy; 2026 [YOUR NAME]</footer>
+</div>
+</body>
+</html>
