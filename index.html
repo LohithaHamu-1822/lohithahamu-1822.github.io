@@ -3,65 +3,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>[YOUR NAME] | Portfolio</title>
-<meta name="description" content="Portfolio of [YOUR NAME]: projects, skills and contact details.">
+<title>Lohitha Hamu Banothu | Portfolio</title>
+<meta name="description" content="Portfolio of Lohitha Hamu Banothu: public policy research, projects, experience and contact details.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --paper: #eef2f1;
-    --ink: #14262b;
-    --muted: #4d6168;
-    --teal: #0f6b6b;
-    --pin: #e0a100;
-    --line: #c5d1d1;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --paper: #0f1c20; --ink: #e6eeee; --muted: #9fb3b8; --teal: #5cc2c2; --line: #28393e; }
-  }
+  :root { --paper:#eef2f1; --ink:#14262b; --muted:#4d6168; --teal:#0f6b6b; --pin:#e0a100; --line:#c5d1d1; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#0f1c20; --ink:#e6eeee; --muted:#9fb3b8; --teal:#5cc2c2; --line:#28393e; } }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body {
-    margin: 0; background: var(--paper); color: var(--ink);
-    font: 400 1.0625rem/1.65 "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  }
-  a { color: var(--teal); text-underline-offset: 3px; }
-  a:focus-visible { outline: 3px solid var(--pin); outline-offset: 3px; border-radius: 2px; }
-  .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.25rem; }
-  header { padding: 4rem 0 2.5rem; border-bottom: 1px solid var(--line); display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; }
-  .intro { flex: 1 1 18rem; }
-  .photo { width: min(100%, 24rem); aspect-ratio: 4 / 5; height: auto; object-fit: cover; border-radius: 8px; border-bottom: 6px solid var(--pin); background: var(--line); flex: none; }
-  h1, h2, h3 { font-family: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif; line-height: 1.15; margin: 0; }
-  h1 { font-size: clamp(2.4rem, 7vw, 3.8rem); font-weight: 700; letter-spacing: -0.02em; }
-  .role { margin: 0.75rem 0 0; color: var(--muted); font-size: 1.15rem; }
-  nav { margin-top: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap; font-weight: 600; }
-  section { padding: 2.5rem 0; border-bottom: 1px solid var(--line); }
-  h2 { font-size: 1.6rem; margin-bottom: 1rem; }
-  p { margin: 0 0 1rem; max-width: 60ch; }
-  .project { display: block; padding: 1.25rem 0 1.25rem 1.1rem; border-left: 4px solid var(--pin); }
-  .project h3 { font-size: 1.3rem; margin-bottom: 0.35rem; }
-  .project p { margin: 0 0 0.6rem; color: var(--muted); }
-  .tags { font-size: 0.9rem; color: var(--muted); }
-  .project + .project { margin-top: 1rem; border-left-color: var(--line); }
-  .job { margin-bottom: 1.75rem; }
-  .job h3 { font-size: 1.2rem; }
-  .job .when { margin: 0.2rem 0 0.6rem; color: var(--muted); font-size: 0.95rem; }
-  .job ul { margin: 0; padding-left: 1.2rem; max-width: 60ch; }
-  ul.contact { list-style: none; padding: 0; margin: 0; }
-  ul.contact li { margin-bottom: 0.4rem; }
-  footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.9rem; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:400 1.0625rem/1.65 "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif; }
+  a { color:var(--teal); text-underline-offset:3px; }
+  a:focus-visible { outline:3px solid var(--pin); outline-offset:3px; border-radius:2px; }
+  .wrap { max-width:62rem; margin:0 auto; padding:0 1.25rem; }
+  header { padding:4rem 0 2.5rem; border-bottom:1px solid var(--line); display:flex; gap:2rem; align-items:center; flex-wrap:wrap; }
+  .intro { flex:1 1 18rem; }
+  .photo { width:min(100%,24rem); aspect-ratio:4/5; height:auto; object-fit:cover; border-radius:8px; border-bottom:6px solid var(--pin); background:var(--line); flex:none; }
+  h1,h2,h3 { font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif; line-height:1.15; margin:0; }
+  h1 { font-size:clamp(2.4rem,7vw,3.8rem); font-weight:700; letter-spacing:-0.02em; }
+  .role { margin:0.75rem 0 0; color:var(--muted); font-size:1.15rem; }
+  nav { margin-top:1.5rem; display:flex; gap:1.5rem; flex-wrap:wrap; font-weight:600; }
+  section { padding:2.5rem 0; border-bottom:1px solid var(--line); }
+  h2 { font-size:1.6rem; margin-bottom:1rem; }
+  p { margin:0 0 1rem; max-width:60ch; }
+  .project { display:block; padding:1.25rem 0 1.25rem 1.1rem; border-left:4px solid var(--pin); }
+  .project h3 { font-size:1.3rem; margin-bottom:0.35rem; }
+  .project p { margin:0 0 0.6rem; color:var(--muted); }
+  .tags { font-size:0.9rem; color:var(--muted); }
+  .project + .project { margin-top:1rem; border-left-color:var(--line); }
+  .job { margin-bottom:1.75rem; }
+  .job h3 { font-size:1.2rem; }
+  .job .when { margin:0.2rem 0 0.6rem; color:var(--muted); font-size:0.95rem; }
+  .job ul, .plain { margin:0; padding-left:1.2rem; max-width:62ch; }
+  .plain li { margin-bottom:0.4rem; }
+  .edu { list-style:none; margin:0; padding:0; max-width:62ch; }
+  .edu li { margin-bottom:1rem; }
+  .edu span { display:block; color:var(--muted); font-size:0.95rem; }
+  ul.contact { list-style:none; padding:0; margin:0; }
+  ul.contact li { margin-bottom:0.4rem; }
+  footer { padding:2rem 0 3rem; color:var(--muted); font-size:0.9rem; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <img class="photo" src="photo.png" alt="Photo of [YOUR NAME]" width="480" height="600">
+    <img class="photo" src="photo.png" alt="Photo of Lohitha Hamu Banothu" width="480" height="600">
     <div class="intro">
-      <h1>[YOUR NAME]</h1>
-      <p class="role">[Your programme and university]. [One line on what you do or want to do.]</p>
+      <h1>Lohitha Hamu Banothu</h1>
+      <p class="role">Master's student in Public Policy at IIT Tirupati. Research interests include geopolitics, urban governance and border cities.</p>
       <nav aria-label="Sections">
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
@@ -71,64 +64,116 @@
 
   <section id="about">
     <h2>About</h2>
-    <p>[Two or three sentences: who you are, what you study, and what you enjoy mapping. Replace this text with your own.]</p>
-    <p>[Optional: your main skills, interests or goals. Delete this line if you do not need it.]</p>
+    <p>I am a Master's student in Public Policy at IIT Tirupati, after a Master's in Political Science at IGNOU and a B.A. in History, Political Science and Geography. I am interested in geopolitics and urban governance, and my dissertation is on border cities.</p>
+    <p>Alongside this, I have done research on urban policy, especially solid waste management, along with field research, policy documentation and concept notes for government and research organisations.</p>
+    <p>I use Stata, R and Python for data analysis and Canva for design. I speak English, Telugu, Hindi, Urdu and Banjari.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="edu">
+      <li><strong>Master's in Public Policy</strong>, Indian Institute of Technology Tirupati<span>Expected 2027 &middot; CGPA 8.53/10</span></li>
+      <li><strong>Master's in Political Science</strong>, Indira Gandhi National Open University, New Delhi<span>2025 &middot; 70.3%</span></li>
+      <li><strong>B.A. (History, Political Science and Geography)</strong>, Narayana Degree College, Osmania University<span>2023 &middot; 9.29 CGPA</span></li>
+      <li><strong>Class XII (TSBIE)</strong>, Narayana Junior College, Hyderabad<span>2020 &middot; 95.2%</span></li>
+      <li><strong>Class X (CBSE)</strong>, Kiran International School, Hyderabad<span>2018 &middot; 80.8%</span></li>
+    </ul>
+    <p style="margin-top:1.25rem"><strong>Technical skills:</strong> Stata, R, Python, Canva, Microsoft Excel for Data Analytics.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-
+    <article class="project">
+      <h3>Dissertation: governance of border cities</h3>
+      <p>Examines how border cities differ from other cities, how conflict makes them vulnerable, what infrastructure deficits they face, how conflict drives out-migration, and how the bilateral relationship with the neighbouring country shapes all of this.</p>
+      <p class="tags">Urban governance, geopolitics, border cities</p>
+    </article>
     <article class="project">
       <h3><a href="waste-bin-map.html">Waste-bin observations: interactive web map</a></h3>
       <p>Waste bins recorded in the field with QField, each with a photo, a field note and the name of the student who collected it. Includes a layer control to toggle collectors and basemaps.</p>
       <p class="tags">QField, GeoPackage, Python, Folium, Leaflet</p>
       <p><a href="waste-bin-map.html">Open the interactive map</a></p>
     </article>
-
     <article class="project">
-      <h3>[Project title]</h3>
-      <p>[One or two sentences on what you did and what you found.]</p>
-      <p class="tags">[Skills or tools used]</p>
-    </article>
-
-    <article class="project">
-      <h3>[Project title]</h3>
-      <p>[One or two sentences on what you did and what you found. Delete any project block you do not need.]</p>
-      <p class="tags">[Skills or tools used]</p>
+      <h3>Implementation failures in urban solid waste management</h3>
+      <p>Research at IISPPR (January to March 2026) on ward-level institutional capacity and coordination across Indian cities, using qualitative and quantitative methods. I received a certificate for publishing a paper on solid waste management with IISPPR.</p>
+      <p class="tags">Qualitative research, quantitative research, urban governance</p>
     </article>
   </section>
 
   <section id="experience">
-    <h2>Internships and experience</h2>
+    <h2>Experience</h2>
 
     <article class="job">
-      <h3>[Role title], [Organisation name]</h3>
-      <p class="when">[Month Year] to [Month Year], [City or Remote]</p>
+      <h3>Research, Office of a Member of Parliament</h3>
+      <p class="when">September 2026 to present</p>
       <ul>
-        <li>[What you did, starting with a verb. Example: Cleaned and analysed survey data for 200 households.]</li>
-        <li>[A result or something you learned. Add a number only if you are sure it is accurate.]</li>
+        <li>Research on youth trend analysis.</li>
       </ul>
     </article>
 
     <article class="job">
-      <h3>[Role title], [Organisation name]</h3>
-      <p class="when">[Month Year] to [Month Year], [City or Remote]</p>
+      <h3>NIUM, Government of Telangana</h3>
+      <p class="when">May 2026 to July 2026</p>
       <ul>
-        <li>[What you did.]</li>
+        <li>Documented Telangana Vision 2047 and the Praja Palana Pragathi Pranalika (99 Days Action Plan) for Hanumakonda District.</li>
+        <li>Conducted field visits to Narsingraopally Primary School after its reopening following 14 years of closure. Interviewed farmers who benefited from Rythu Vedikas, and POSH trainers and trainees, and reported the findings.</li>
+        <li>Assisted in drafting the expression of interest (EOI) for collaboration with the National Institute of Urban Affairs (NIUA).</li>
+        <li>Developed a framework for positioning NIUM as a CSR project hub and designed a brochure on it.</li>
+        <li>Wrote a report on the CITIIS 2.0 Orientation Program.</li>
+        <li>Wrote a concept note for the Rockefeller Foundation on energy, green building, mobility and air quality.</li>
+        <li>Wrote a concept note on energy and green building for the Greater Warangal Municipal Corporation (GWMC), and a preliminary EIS-SIA framework for the GWMC UGSS project.</li>
+        <li>Designed brochures on a gig-worker resting pod and branded merchandise for NIUM.</li>
       </ul>
     </article>
+
+    <article class="job">
+      <h3>IISPPR (Public Policy)</h3>
+      <p class="when">January 2026 to March 2026</p>
+      <ul>
+        <li>Researched implementation failures in urban solid waste management, covering ward-level institutional capacity and coordination in several Indian cities.</li>
+        <li>Conducted qualitative and quantitative research.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <h3>CRoPC (Climate Resilient Observing-Systems Promotion Council)</h3>
+      <p class="when">December 2025 to January 2026</p>
+      <ul>
+        <li>Researched lightning risk, vulnerability and disaster mitigation strategies.</li>
+        <li>Supported the team in developing recommendations for strengthening early warning systems and community preparedness.</li>
+        <li>Assisted in data collection, cleaning and basic analysis for evidence-based research.</li>
+      </ul>
+    </article>
+
+
+    <h3 style="margin:2rem 0 0.75rem">Positions of responsibility</h3>
+    <ul class="plain">
+      <li><strong>Neeti Bodh Club, Coordinator (Events and Organisation):</strong> coordinated the Mock Parliament event, including planning, logistics and execution. Authored an article for the club newsletter, Neeti Parichay. Coordinated the JP Narayan talk and anchored the session.</li>
+      <li><strong>Guidance and Counseling Unit (GCU), PG Core Member:</strong> coordinated Mental Health Week, planning and running awareness activities and sessions. Authored "Still Standing", an article on resilience and mental wellbeing, for the unit's magazine.</li>
+      <li><strong>BIS Students Chapter IIT Tirupati, Core Member (Events and Organization):</strong> coordinated a boot camp on the Bureau of Indian Standards, managing logistics and participant engagement.</li>
+    </ul>
+
+    <h3 style="margin:2rem 0 0.75rem">Awards</h3>
+    <ul class="plain">
+      <li>Certificate for publishing a paper on solid waste management, IISPPR</li>
+      <li>Winner, Inter-College Essay Competition on Social Justice and Prosperity</li>
+      <li>Winner, Inter-College Quiz Competition</li>
+      <li>Merit certificate, Heartfulness Essay Event, 2021</li>
+      <li>Runner-up, Inter-School Running Race and Throwball</li>
+    </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <ul class="contact">
-      <li>Email: <a href="mailto:[your-email]">[your-email]</a></li>
-      <li>GitHub: <a href="https://github.com/[your-username]">github.com/[your-username]</a></li>
-      <li>LinkedIn: <a href="[your-linkedin-url]">[your-linkedin-url]</a></li>
+      <li>Email: <a href="mailto:lohithabanothu2003@gmail.com">lohithabanothu2003@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/LohithaHamu-1822">github.com/LohithaHamu-1822</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/lohitha-hamu-banothu-757a0536b/">linkedin.com/in/lohitha-hamu-banothu-757a0536b</a></li>
     </ul>
   </section>
 
-  <footer>&copy; 2026 [YOUR NAME]</footer>
+  <footer>&copy; 2026 Lohitha Hamu Banothu</footer>
 </div>
 </body>
 </html>
