@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhopal urban classes, 2000–2020 | Lohitha Hamu</title>
+  <style>
+    :root { --bg: #0c1013; --panel: #12181c; --line: #232b31; --ink: #f4f1ea;
+            --muted: #aab4bb; --accent: #f4a259; --accent2: #e76f51; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink);
+           font-family: system-ui, "Segoe UI", Arial, sans-serif; line-height: 1.6; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 56px 24px 80px; }
+    .eyebrow { color: var(--accent); font-size: 0.78em; font-weight: 600;
+               letter-spacing: 0.12em; text-transform: uppercase; }
+    h1 { font-size: clamp(2.2em, 5vw, 3.6em); line-height: 1.05; margin: 0.35em 0 0.4em;
+         letter-spacing: -0.02em; max-width: 820px; }
+    .lede { color: var(--muted); font-size: 1.08em; max-width: 680px; }
+    .byline { color: var(--muted); font-size: 0.9em; margin-top: 18px; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+             gap: 14px; margin: 36px 0 12px; }
+    .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+    .stat b { display: block; font-size: 2.1em; color: var(--accent); line-height: 1.1; }
+    .stat span { color: var(--muted); font-size: 0.92em; }
+    section { border-top: 1px solid var(--line); margin-top: 64px; padding-top: 28px; }
+    h2 { font-size: 2em; margin: 0 0 12px; letter-spacing: -0.01em; }
+    .intro { color: var(--muted); max-width: 680px; }
+    figure { margin: 26px 0 0; background: var(--panel); border: 1px solid var(--line);
+             border-radius: 16px; padding: 14px; }
+    figure img { width: 100%; display: block; border-radius: 8px; }
+    figcaption { color: var(--muted); font-size: 0.9em; padding: 12px 6px 4px; }
+    .split { display: grid; grid-template-columns: 1.6fr 1fr; gap: 28px; align-items: start; }
+    .notes { border-left: 3px solid var(--accent2); padding: 4px 0 4px 16px; margin-bottom: 18px; }
+    .notes strong { color: var(--ink); }
+    .notes p { color: var(--muted); margin: 4px 0 0; font-size: 0.95em; }
+    table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 0.93em;
+            background: var(--panel); border-radius: 12px; overflow: hidden; }
+    th, td { padding: 10px 14px; border-bottom: 1px solid var(--line); text-align: right; }
+    th { color: var(--accent); font-weight: 600; font-size: 0.85em; text-transform: uppercase;
+         letter-spacing: 0.04em; background: #161d22; }
+    th:first-child, td:first-child { text-align: left; }
+    .downloads { margin-top: 14px; }
+    .downloads a { display: inline-block; margin: 6px 10px 0 0; padding: 9px 16px;
+                   border: 1px solid var(--accent); color: var(--accent); border-radius: 8px;
+                   text-decoration: none; font-size: 0.92em; }
+    .todo { background: #2a2411; border: 1px dashed var(--accent); color: #f7e3b5;
+            padding: 16px 18px; border-radius: 10px; }
+    ul.limits { color: var(--muted); padding-left: 20px; }
+    ul.limits li { margin-bottom: 8px; }
+    .sources { color: var(--muted); font-size: 0.92em; padding-left: 20px; }
+    .sources li { margin-bottom: 8px; }
+    a { color: var(--accent); }
+    .back { display: inline-block; margin-top: 48px; font-size: 0.95em; }
+    @media (max-width: 800px) { .split { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<main class="wrap">
+
+  <p class="eyebrow">HS524M · Question 2 · Google Earth Engine urban analysis</p>
+  <h1>Bhopal's suburban fringe grew 4.5 times in twenty years.</h1>
+  <p class="lede">Using JRC Global Human Settlement Layer data, this page tracks how the Degree of Urbanisation
+  classes and population changed inside the Bhopal district between 2000 and 2020.</p>
+  <p class="byline">Lohitha Hamu · Roll no. HS25M106 · Row 12 (Bhopal)</p>
+
+  <div class="stats">
+    <div class="stat"><b>4.5×</b><span>suburban / peri-urban area, 75.6 to 340.5 km²</span></div>
+    <div class="stat"><b>+61%</b><span>total population, 18,713 to 30,211</span></div>
+    <div class="stat"><b>−32%</b><span>very low density rural area, 1,543 to 1,052 km²</span></div>
+    <div class="stat"><b>5</b><span>epochs compared: 2000, 2005, 2010, 2015, 2020</span></div>
+  </div>
+
+  <section>
+    <h2>The change over time</h2>
+    <p class="intro">Each frame uses the same extent, colours and legend, so the classes can be compared directly.</p>
+    <figure>
+      <img src="bhopal_smod_2000_2020.gif" alt="Animated map of Bhopal urban classes, 2000 to 2020">
+      <figcaption>Time slider with five epochs. Colours were chosen for readability; class definitions follow GHSL.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Where the classes sit</h2>
+    <p class="intro">The five-panel view shows the full sequence at once.</p>
+    <figure>
+      <img src="bhopal_smod_2000_2005_2010_2015_2020.png" alt="Five-panel maps of Bhopal urban classes, 2000 to 2020">
+      <figcaption>Degree of Urbanisation classes, Bhopal district (FAO GAUL 2025 boundary). Same legend and scale in every panel.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Area by class</h2>
+    <div class="split">
+      <div>
+        <table>
+          <tr><th>Class</th><th>2000 (km²)</th><th>2020 (km²)</th><th>Change (%)</th></tr>
+          <tr><td>Very low density rural</td><td>1543.07</td><td>1051.88</td><td>−31.8</td></tr>
+          <tr><td>Low density rural</td><td>765.30</td><td>865.85</td><td>+13.1</td></tr>
+          <tr><td>Rural cluster</td><td>170.87</td><td>228.85</td><td>+33.9</td></tr>
+          <tr><td>Suburban / peri-urban</td><td>75.64</td><td>340.50</td><td>+350.1</td></tr>
+          <tr><td>Semi-dense urban cluster</td><td>3.66</td><td>16.45</td><td>+349.9</td></tr>
+          <tr><td>Dense urban cluster</td><td>7.30</td><td>9.15</td><td>+25.3</td></tr>
+          <tr><td>Urban centre</td><td>167.76</td><td>221.83</td><td>+32.2</td></tr>
+          <tr><td>Water</td><td>32.92</td><td>32.01</td><td>−2.8</td></tr>
+        </table>
+        <p class="downloads"><a href="bhopal_area_change_2000_2020.csv">Download area table (CSV)</a></p>
+      </div>
+      <div>
+        <div class="notes"><strong>Suburban area</strong><p>Grew from 75.64 to 340.50 km² between 2000 and 2020.</p></div>
+        <div class="notes"><strong>Very low density rural</strong><p>Lost 491.19 km² over the same period.</p></div>
+        <div class="notes"><strong>Water</strong><p>Changed by less than 1 km², so it is not a driver of change.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Population</h2>
+    <table>
+      <tr><th>Year</th><th>Total</th><th>Urban centre</th><th>Suburban</th><th>Suburban area (km²)</th></tr>
+      <tr><td>2000</td><td>18,713</td><td>14,816</td><td>672</td><td>75.64</td></tr>
+      <tr><td>2005</td><td>21,208</td><td>16,719</td><td>760</td><td>101.55</td></tr>
+      <tr><td>2010</td><td>23,918</td><td>18,666</td><td>1,298</td><td>176.34</td></tr>
+      <tr><td>2015</td><td>26,908</td><td>21,663</td><td>1,698</td><td>223.00</td></tr>
+      <tr><td>2020</td><td>30,211</td><td>23,936</td><td>2,416</td><td>340.50</td></tr>
+    </table>
+    <p class="downloads"><a href="bhopal_population_by_class.csv">Download population by class (CSV)</a></p>
+    <p class="intro">Population is a modelled estimate from GHSL, not a census count. People per km² in the urban centre
+    rose from 88.3 to 107.9, and in the suburban class it fell from 8.9 to 7.1.</p>
+  </section>
+
+  <section>
+    <h2>Discussion</h2>
+    <p>The panels and GIF show the urban centre as the dominant built-up area in every year, with the suburban class forming a band around it. Between 2000 and 2020 that band widened: suburban / peri-urban land grew from 75.64 km² to 340.50 km², about 4.5 times its 2000 area. The main loss came from very low density rural land, which fell by 491.19 km² (−31.8%). Most of that land appears to have moved into the suburban and low density rural classes, although the area table alone cannot show the exact transitions.</p>
+    <p>The population table shows that the city's core remained the main place people lived. The urban centre held about 79% of the district's population in both 2000 and 2020, rising from 14,816 to 23,936 people. Its density increased from 88.3 to 107.9 people per km², so growth in the core was accompanied by some densification. The suburban class grew in population from 672 to 2,416 people, which is about 3.6 times, but its area grew about 4.5 times. As a result, its density fell from 8.9 to 7.1 people per km². This suggests that the new suburban land is being settled at lower density than the older parts of the district.</p>
+    <p>Taken together, the district's growth in these twenty years looks like spread on the edges more than a shift of people away from the core. The total population rose by about 61%, from 18,713 to 30,211, but the share living in the urban centre barely changed. The data cannot show why people moved, whether through migration, natural growth, or changes in housing, so these explanations should be treated as hypotheses rather than findings.</p>
+    <p>These conclusions depend on the data. The 1 km grid cannot separate small settlements from their surroundings, and the population values are modelled estimates rather than census counts. The FAO GAUL boundary is a district rather than the Bhopal Municipal Corporation area, so the figures include rural land outside the city. Comparing the results with the Census of India figures for Bhopal would be a useful next check.</p>
+  </section>
+  <section>
+    <h2>Limitations</h2>
+    <ul class="limits">
+      <li>The 1 km grid is coarse, so small settlements and narrow roads can be merged into larger classes.</li>
+      <li>The FAO GAUL 2025 boundary is a district, which includes areas outside the built city.</li>
+      <li>Population is a modelled estimate, and the 100 m data was aggregated to 1 km.</li>
+      <li>GHSL epochs are estimates, so the timing of change within each five-year interval is uncertain.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Sources</h2>
+    <ul class="sources">
+      <li>European Commission, Joint Research Centre. GHSL: Degree of Urbanization 1975–2030 V2-0 (P2023A),
+          <code>JRC/GHSL/P2023A/GHS_SMOD_V2-0</code>. Google Earth Engine Data Catalog.</li>
+      <li>European Commission, Joint Research Centre. GHSL Population (P2023A), <code>JRC/GHSL/P2023A/GHS_POP</code>.
+          Copy the citation from the Earth Engine catalogue page.</li>
+      <li>FAO. Global Administrative Unit Layers 2025, level 2, <code>FAO/GAUL/2025/level2</code>.
+          Copy the citation from the Earth Engine catalogue page.</li>
+    </ul>
+  </section>
+
+  <a class="back" href="index.html">← Back to portfolio</a>
+</main>
+</body>
+</html>
