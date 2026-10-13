@@ -1,0 +1,41 @@
+year,class,population,area_km2,people_per_km2
+2000,Water,0,32.92,0.0
+2000,Very low density rural,211,1543.07,0.1
+2000,Low density rural,1069,765.3,1.4
+2000,Rural cluster,1313,170.87,7.7
+2000,Suburban / peri-urban,672,75.64,8.9
+2000,Semi-dense urban cluster,81,3.66,22.1
+2000,Dense urban cluster,551,7.3,75.4
+2000,Urban centre,14816,167.76,88.3
+2005,Water,0,32.01,0.0
+2005,Very low density rural,197,1413.89,0.1
+2005,Low density rural,1116,820.71,1.4
+2005,Rural cluster,1495,197.69,7.6
+2005,Suburban / peri-urban,760,101.55,7.5
+2005,Semi-dense urban cluster,125,5.48,22.9
+2005,Dense urban cluster,796,11.88,67.0
+2005,Urban centre,16719,183.31,91.2
+2010,Water,0,32.01,0.0
+2010,Very low density rural,181,1301.03,0.1
+2010,Low density rural,1187,853.78,1.4
+2010,Rural cluster,1422,188.85,7.5
+2010,Suburban / peri-urban,1298,176.34,7.4
+2010,Semi-dense urban cluster,117,4.56,25.6
+2010,Dense urban cluster,1047,16.45,63.6
+2010,Urban centre,18666,193.51,96.5
+2015,Water,0,32.01,0.0
+2015,Very low density rural,158,1172.7,0.1
+2015,Low density rural,1304,912.39,1.4
+2015,Rural cluster,1448,189.04,7.7
+2015,Suburban / peri-urban,1698,223.0,7.6
+2015,Semi-dense urban cluster,218,10.05,21.7
+2015,Dense urban cluster,419,9.15,45.8
+2015,Urban centre,21663,218.18,99.3
+2020,Water,0,32.01,0.0
+2020,Very low density rural,137,1051.88,0.1
+2020,Low density rural,1280,865.85,1.5
+2020,Rural cluster,1577,228.85,6.9
+2020,Suburban / peri-urban,2416,340.5,7.1
+2020,Semi-dense urban cluster,389,16.45,23.6
+2020,Dense urban cluster,476,9.15,52.0
+2020,Urban centre,23936,221.83,107.9

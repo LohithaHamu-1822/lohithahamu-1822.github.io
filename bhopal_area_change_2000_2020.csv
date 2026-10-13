@@ -1,0 +1,9 @@
+class,area_2000_km2,area_2020_km2,change_km2,change_pct
+Water,32.92,32.01,-0.92,-2.8
+Very low density rural,1543.07,1051.88,-491.19,-31.8
+Low density rural,765.3,865.85,100.55,13.1
+Rural cluster,170.87,228.85,57.99,33.9
+Suburban / peri-urban,75.64,340.5,264.85,350.1
+Semi-dense urban cluster,3.66,16.45,12.79,349.9
+Dense urban cluster,7.3,9.15,1.84,25.3
+Urban centre,167.76,221.83,54.08,32.2
